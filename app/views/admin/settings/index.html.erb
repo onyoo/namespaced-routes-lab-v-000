@@ -1,0 +1,11 @@
+<%= form_for @preference, url: admin_settings_index_path(@preference) do |f| %>
+
+ <%= f.label :artist_sort_order %>
+ <p>Descending:</p><%= f.radio_button :artist_sort_order, "DESC" %>
+ <p>Ascending:</p><%= f.radio_button :artist_sort_order, "ASC" %>
+<br>
+ <%= f.label :song_sort_order %>
+ <p>Descending:</p><%= f.radio_button :song_sort_order, "DESC" %>
+ <p>Ascending:</p><%= f.radio_button :song_sort_order, "ASC" %>
+
+<% end %>
